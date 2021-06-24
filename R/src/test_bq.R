@@ -8,3 +8,4 @@ sql <- "SELECT year, month, day, weight_pounds FROM `publicdata.samples.natality
 tb <- bq_project_query(billing, sql)
 bq_table_download(tb, max_results = 10)
 
+
